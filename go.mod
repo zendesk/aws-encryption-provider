@@ -10,9 +10,7 @@ require (
 	github.com/prometheus/client_golang v1.0.0
 	github.com/stretchr/testify v1.4.0 // indirect
 	go.uber.org/zap v0.0.0-20180814183419-67bc79d13d15
-	golang.org/x/net v0.0.0-20190909003024-a7b16738d86b // indirect
-	golang.org/x/sys v0.0.0-20190911201528-7ad0cfa0b7b5 // indirect
-	golang.org/x/text v0.3.2 // indirect
+	golang.org/x/text v0.3.8 // indirect
 	golang.org/x/time v0.0.0-20161028155119-f51c12702a4d
 	google.golang.org/grpc v1.23.0
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
