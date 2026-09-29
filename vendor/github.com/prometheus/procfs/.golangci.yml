@@ -1,6 +1,31 @@
-# Run only staticcheck for now. Additional linters will be enabled one-by-one.
+---
 linters:
   enable:
-  - staticcheck
+  - errcheck
+  - forbidigo
+  - godot
+  - gofmt
+  - goimports
+  - gosimple
   - govet
-  disable-all: true
+  - ineffassign
+  - misspell
+  - revive
+  - staticcheck
+  - testifylint
+  - unused
+
+linters-settings:
+  forbidigo:
+    forbid:
+      - p: ^fmt\.Print.*$
+        msg: Do not commit print statements.
+  godot:
+    capital: true
+    exclude:
+    # Ignore "See: URL"
+    - 'See:'
+  goimports:
+      local-prefixes: github.com/prometheus/procfs
+  misspell:
+    locale: US
